@@ -1,0 +1,20 @@
+/* box shadow */
+[data-rem-tags~="examq"] {
+   padding: 3px;
+   box-shadow: 0px 0px 2px darkolivegreen;
+   margin-bottom: 5px;
+}
+
+[data-rem-tags~="situation"] {
+   box-shadow: 0px 0px 2px steelblue;
+   padding: 3px;
+   margin-bottom: 5px;
+}
+
+/* hide tags unless the rem is zoomed in */
+[data-rem-tags~="examq"]:not(:focus-within) .hierarchy-editor__tag-bar {
+   display: none;
+}
+[data-rem-tags~="situation"]:not(:focus-within) .hierarchy-editor__tag-bar {
+   display: none;
+}
